@@ -19,12 +19,12 @@
 
       <UiShinyText
         text="Full-Stack Developer"
-        class="text-2xl text-green-600 font-semibold"
+        class="text-4xl text-green-600 font-semibold"
         :disabled="false"
         :speed="3"
       />
 
-      <div class="flex flex-col space-y-1 text-center lg:text-left">
+      <div class="flex flex-col space-y-1 text-center lg:text-left text-black dark:text-white">
         <p class="text-lg font-medium">
           I help people bring their idea to life by
         </p>
