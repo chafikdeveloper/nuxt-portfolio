@@ -8,4 +8,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     @apply text-black dark:text-white
-}   
+}
+
+.framework {
+    @apply text-emerald-500 dark:text-emerald-400
+}

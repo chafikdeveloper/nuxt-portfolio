@@ -48,7 +48,7 @@
 
       <div class="flex gap-4 mt-4">
         <NuxtLink :to="{name: 'projects'}">
-          <button class="px-4 py-2 rounded-full bg-emerald-800 text-emerald-400 font-bold cursor-pointer">
+          <button class="px-4 py-2 rounded-full bg-emerald-600 dark:bg-emerald-800 text-emerald-200 dark:text-emerald-400 font-bold cursor-pointer">
             View projects
           </button>
         </NuxtLink>
