@@ -1,28 +1,32 @@
 <script setup lang="ts"></script>
 
 <template>
-    <!-- //TODO: uncomment this when you finish -->
-  <UiSplashCursor
-    :SIM_RESOLUTION="128"
-    :DYE_RESOLUTION="1440"
-    :CAPTURE_RESOLUTION="512"
-    :DENSITY_DISSIPATION="3.5"
-    :VELOCITY_DISSIPATION="2"
-    :PRESSURE="0.1"
-    :PRESSURE_ITERATIONS="20"
-    :CURL="3"
-    :SPLAT_RADIUS="0.2"
-    :SPLAT_FORCE="6000"
-    :SHADING="true"
-    :COLOR_UPDATE_SPEED="10"
-    :BACK_COLOR="{ r: 0.5, g: 0, b: 0 }"
-    :TRANSPARENT="true"
-  />
-  <Navbar />
+  <!-- //TODO: uncomment this when you finish -->
+  <div class="min-h-screen flex flex-col">
+    <UiSplashCursor
+      :SIM_RESOLUTION="128"
+      :DYE_RESOLUTION="1440"
+      :CAPTURE_RESOLUTION="512"
+      :DENSITY_DISSIPATION="3.5"
+      :VELOCITY_DISSIPATION="2"
+      :PRESSURE="0.1"
+      :PRESSURE_ITERATIONS="20"
+      :CURL="3"
+      :SPLAT_RADIUS="0.2"
+      :SPLAT_FORCE="6000"
+      :SHADING="true"
+      :COLOR_UPDATE_SPEED="10"
+      :BACK_COLOR="{ r: 0.5, g: 0, b: 0 }"
+      :TRANSPARENT="true"
+    />
+    <Navbar />
 
-  <main class="container mx-auto max-w-7xl">
-    <slot />
-  </main>
+    <main class="container flex-1 grow mx-auto max-w-7xl">
+      <slot />
+    </main>
 
-  <Footer />
+    <div>
+      <Footer />
+    </div>
+  </div>
 </template>
