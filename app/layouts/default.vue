@@ -1,7 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  useHead({
+    htmlAttrs: {
+      lang: "en"
+    }
+  })
+</script>
 
 <template>
-  <!-- //TODO: uncomment this when you finish -->
   <div class="min-h-screen flex flex-col">
     <UiSplashCursor
       :SIM_RESOLUTION="128"

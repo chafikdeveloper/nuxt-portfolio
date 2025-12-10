@@ -4,7 +4,13 @@ definePageMeta({
 })
 
 useHead({
-    title: 'Chafik Chegma | Contact'
+    title: 'Chafik Chegma | Contact',
+    meta: [
+        {
+            name: "description",
+            content: "Get in touch with Chafik Chegma for web development projects, collaborations, or freelance work. Fill out the contact form or reach me via email or social media."
+        }
+    ]
 })
 
 const linkedin = process.env.LINKEDIN_LINK

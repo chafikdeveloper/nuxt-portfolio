@@ -12,6 +12,12 @@ const { data: project, pending } = await useFetch<Project>("/api/project", {
 
 useHead({
   title: `Project - ${project.value?.title}`,
+  meta: [
+    {
+      name: "description",
+      content: `Detailed view of the ${project.value?.title} project by Chafik Chegma. Discover project goals, technologies used, challenges solved, and see live demos or code examples.`
+    }
+  ]
 });
 </script>
 

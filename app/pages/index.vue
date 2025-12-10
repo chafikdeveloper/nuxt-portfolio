@@ -5,6 +5,12 @@ definePageMeta({
 
 useHead({
   title: "Chafik Chegma | Home",
+  meta: [
+    {
+      name: "description",
+      content:"Welcome to Chafik Chegma's portfolio. Explore my web development projects, learn about my skills, and discover how I create modern, responsive, and accessible websites."
+    }
+  ]
 });
 </script>
 
@@ -17,16 +23,18 @@ useHead({
 
   <section class="mx-auto max-w-7xl lg:mt-24 my-8 px-6">
     <div class="flex flex-col items-center space-y-1 mt-4 mb-8">
-      <h3 class="text-center text-xl font-bold">My Projects</h3>
-      <h4 class="text-center text-md font-light">View my latest projects</h4>
+      <h2 class="text-center text-xl font-bold">My Projects</h2>
+      <h3 class="text-center text-md font-light">View my latest projects</h3>
     </div>
 
-    <Project :limit="3" />
+    <ClientOnly>
+      <Project :limit="3" />
+    </ClientOnly>
 
     <div class="flex justify-center mt-8">
       <NuxtLink :to="{ name: 'projects' }">
         <button
-          class="flex gap-2 items-center px-4 py-2 rounded-full text-emerald-500 font-bold cursor-pointer"
+          class="flex gap-2 items-center px-4 py-2 rounded-full text-emerald-700 hover:text-emerald-800 font-bold cursor-pointer"
         >
           View all projects
           <svg
@@ -51,12 +59,14 @@ useHead({
 
   <section class="mx-auto max-w-7xl lg:mt-24 my-8 px-6">
     <div class="flex flex-col items-center space-y-1 mt-4 mb-8">
-      <h3 class="text-center text-xl font-bold">Testimonials</h3>
-      <h4 class="text-center text-md font-light">What people says about me</h4>
+      <h2 class="text-center text-xl font-bold">Testimonials</h2>
+      <h3 class="text-center text-md font-light">What people says about me</h3>
     </div>
 
     <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-      <Testimonial />
+      <ClientOnly>
+        <Testimonial />
+      </ClientOnly>
     </div>
   </section>
 </template>

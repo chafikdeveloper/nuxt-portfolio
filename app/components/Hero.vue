@@ -30,25 +30,27 @@
         </p>
         <p class="text-lg font-medium">
           creating
-          <UiTextType
-            :text="[
-              'modern design',
-              'minimalistic style',
-              'performante',
-              'problem-solving',
-            ]"
-            :show-cursor="false"
-            :pause-duration="1000"
-            :typing-speed="75"
-            class="bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text"
-          />
+          <ClientOnly>
+            <UiTextType
+              :text="[
+                'modern design',
+                'minimalistic style',
+                'performante',
+                'problem-solving',
+              ]"
+              :show-cursor="false"
+              :pause-duration="1000"
+              :typing-speed="75"
+              class="bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text"
+            />
+          </ClientOnly>
           web apps
         </p>
       </div>
 
       <div class="flex gap-4 mt-4">
         <NuxtLink :to="{name: 'projects'}">
-          <button class="px-4 py-2 rounded-full bg-emerald-600 dark:bg-emerald-800 text-emerald-200 dark:text-emerald-400 font-bold cursor-pointer">
+          <button class="px-4 py-2 rounded-full bg-emerald-600 dark:bg-emerald-800 text-white dark:text-emerald-100 font-bold cursor-pointer">
             View projects
           </button>
         </NuxtLink>

@@ -24,7 +24,7 @@ const {data: testimonials, pending} = await useFetch("/api/testimonials", {
     class="break-inside-avoid flex flex-col p-4 border-2 rounded-md shadow-md bg-gray-900"
   >
     <div>
-      <h3 class="font-bold text-lg text-white!">{{ item.name }}</h3>
+      <h4 class="font-bold text-lg text-white!">{{ item.name }}</h4>
       <p class="font-medium text-sm text-emerald-500">{{ item.role }}</p>
     </div>
     <div class="mt-4">

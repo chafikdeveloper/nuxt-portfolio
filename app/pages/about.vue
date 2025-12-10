@@ -5,6 +5,12 @@ definePageMeta({
 
 useHead({
   title: "Chafik Chegma | About",
+  meta: [
+    {
+      name: "description",
+      content: "Learn more about Chafik Chegma, a passionate web developer specializing in modern web technologies, building responsive and user-friendly websites, and turning ideas into real projects."
+    }
+  ]
 });
 </script>
 

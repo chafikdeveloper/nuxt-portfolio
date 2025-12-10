@@ -30,9 +30,9 @@ defineProps({
     </div>
 
     <NuxtLink :to="`projects/${project.slug}`">
-      <h5 class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading text-white!">
+      <h4 class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading text-white!">
         {{ project.title }}
-      </h5>
+      </h4>
     </NuxtLink>
     
     <p class="mb-6 text-body line-clamp-2 min-h-12 text-white!">
