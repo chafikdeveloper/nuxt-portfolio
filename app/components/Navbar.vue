@@ -100,13 +100,13 @@ const navLinks = computed(() => [
           class="flex items-center gap-4 text-black dark:text-white"
         >
           <li
-            class="hover:text-blue-500"
-            :class="{ 'text-green-600! border-b font-bold': link.active }"
+            class="hover:text-blue-600"
+            :class="{ 'text-green-800! border-b font-bold': link.active }"
           >
             <NuxtLink :to="{ name: link.link }">{{ link.name }}</NuxtLink>
           </li>
         </ul>
-        <button @click="toggleColorMode" class="text-black dark:text-white cursor-pointer">
+        <button @click="toggleColorMode" class="text-black dark:text-white cursor-pointer" aria-label="toggle theme mode">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
